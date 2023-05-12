@@ -1,8 +1,6 @@
 #include <iostream>
 #include <chrono>
 #include <iomanip>
-#include <random>
-#include <vector>
 
 #include "djikstra.h"
 #include "floyd.h"
@@ -37,11 +35,25 @@ int main() {
         time_taken *= 1e-9;
     }
 
-    int graph[V][V] = { {0, 4, 9},
-                        {4, 0, 5},
-                        {9, 5, 0} };
+//    int graph[V][V] = { {0, 4, 9},
+//                        {4, 0, 5},
+//                        {9, 5, 0} };
 
+//    int graph[V][V] = { {0, 2, 0},
+//                        {2, 0, 8},
+//                        {0, 8, 0} };
 
+//    int graph[V][V] = { {0, 1, 5, 0, 8},
+//                        {1, 0, 7, 3, 0},
+//                        {5, 7, 0, 11, 3},
+//                        {0, 3, 11, 0, 6},
+//                        {8, 0, 3, 6, 0} };
+
+    int graph[V][V] = { {0, 2, 6, 3, 9},
+                        {2, 0, 7, 13, 7},
+                        {6, 7, 0, 11, 3},
+                        {3, 13, 11, 0, 6},
+                        {9, 7, 3, 6, 0} };
 
     cout << "Dijkstra" << endl;
     {

@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define V 3
+#define V 5
 
 int minDistance(int dist[], bool sptSet[]) {
     int min = INT_MAX, min_index = -1;

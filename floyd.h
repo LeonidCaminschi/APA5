@@ -1,6 +1,6 @@
 #pragma once
 
-#define V 3
+#define V 5
 
 void floydWarshall(int dist[][V])
 {
